@@ -19,7 +19,7 @@ app.post('/send-email', (req, res) => {
     const mailOptions = {
         from: email,
         to: process.env.GMAIL_USER, // Use the environment variable for your email address
-        subject: 'New Contact Form Submission',
+        subject: `${name}: New Contact Form Submission`,
         text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`
     };
 
