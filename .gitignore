@@ -1,37 +1,55 @@
-# Local .terraform directories
-**/.terraform/*
+# Node.js
+node_modules/
+package-lock.json  # or yarn.lock
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+# Package Managers
+.pnpm-store/      # pnpm
+.yarn/            # Yarn 2+ cache
 
-# Crash log files
-crash.log
-crash.*.log
+# Testing
+coverage/
+*.test.js.snap
+.nyc_output/
+.jest_cache/
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
-*.tfvars
-*.tfvars.json
+# Build and Distribution
+dist/
+build/
+*.bundle.js
+*.map
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# OS and Editor Specific
+.DS_Store
+.idea/           # IntelliJ IDEA
+.vscode/         # VS Code
+*.swp           # Swap files (vim, emacs)
+*~              # Backup files (gedit, kate)
+Thumbs.db
 
-# Ignore transient lock info files created by terraform apply
-.terraform.tfstate.lock.info
+# Environment Variables
+.env
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
+# Logs
+*.log
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# Temporary Files
+tmp/
+temp/
+*.tmp
 
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
+# Optional - If you use specific bundlers/tools
+.parcel-cache     # Parcel
+.cache           # Often used by various tools
+
+# Optional - If you have a specific framework
+.next           # Next.js
+.nuxt           # Nuxt.js
+
+# Optional - If you use Docker
+docker-compose.override.yml
+
+# Optional - If you use specific cloud platforms
+.serverless      # Serverless Framework
+
+# Optional - If you use TypeScript
+*.tsbuildinfo
