@@ -1,4 +1,5 @@
-
+# Server setup
+### Building the Container Image
 ```Dockerfile
 # Use the UBI 9 Node.js 22 image
 FROM registry.access.redhat.com/ubi9/nodejs-22
@@ -34,7 +35,7 @@ CMD ["node", "app.js"]
 ```
 
 
-
+### Running the container
 ```bash
 echo "your-email@gmail.com" > gmail_user.txt
 echo "your-email-password" > gmail_password.txt
@@ -51,3 +52,8 @@ podman run --name mail-function -p 8080:8080 --rm \
   --secret GMAIL_PASS,type=env,target=GMAIL_PASS \
   nodejs-mail-function:latest
   ```
+### Check the server side
+```bash
+  curl -X POST http://localhost:8080/send-email      -H "Content-Type: application/json"      -H "Authorization: Bearer your_token"      -d '{"name": "John Doe", "email": "john.doe@example.com", "message": "Hello!"}'
+
+```

@@ -22,7 +22,7 @@ app.post('/send-email', (req, res) => {
         from: email,
         to: process.env.GMAIL_USER, // Use the environment variable for your email address
         subject: `${name}: New Contact Form Submission`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`
+        text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage:\n${message}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
