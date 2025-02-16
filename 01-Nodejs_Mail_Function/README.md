@@ -7,7 +7,7 @@ This solution consists of a frontend HTML form and a backend server to handle fo
 ## Frontend
 
 ### HTML Form
-The HTML form (`<form id="contact-form">`) includes the following fields:
+The [HTML form](form.html) (`<form id="contact-form">`) includes the following fields:
 - **Name**: An input field for the user's name.
 - **Subject**: An input field for the subject of the message.
 - **Email**: An input field for the user's email address.
@@ -80,7 +80,7 @@ This code effectively captures form data, sends it to a server endpoint, and han
 ## Backend
 
 ### Server Side Code
-The server-side code sets up an Express server to handle HTTP POST requests for sending emails using the Gmail service. It uses the `nodemailer` package to send emails and the `cors` middleware to enable Cross-Origin Resource Sharing (CORS). The server is designed to run as a Google Cloud Function.
+The server-side [code](Google_cloud_function/index.js) sets up an Express server to handle HTTP POST requests for sending emails using the Gmail service. It uses the `nodemailer` package to send emails and the `cors` middleware to enable Cross-Origin Resource Sharing (CORS). The server is designed to run as a Google Cloud Function.
 
 ### Key Components:
 
