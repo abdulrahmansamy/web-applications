@@ -1,6 +1,11 @@
 // For google cloud functions, with reCAPTCHA verification.
 // you need to use the functions-framework package
 // Environment Variables: GMAIL_USER, GMAIL_PASS, TARGET_EMAIL, RECAPTCHA_SECRET_KEY
+// using cors package to enable Cross-Origin Resource Sharing.
+// using nodemailer package to send emails.
+// using express package to create a server.
+// using body-parser package to parse the request body.
+// using axios package to make HTTP requests.
  
 const functions = require('@google-cloud/functions-framework'); // Import the functions-framework package
 
