@@ -53,6 +53,15 @@ This project demonstrates how to create a Google Cloud Function that handles for
 - `form.html`: The HTML form for capturing user input.
 - `scripts.js`: The JavaScript file for handling form submission and reCAPTCHA verification.
 
+## Dependencies
+
+- `@google-cloud/functions-framework`: ^3.0.0
+- `body-parser`: ^1.20.3
+- `express`: ^4.21.2
+- `nodemailer`: ^6.10.0
+- `cors`: ^2.8.5
+- `axios`: ^1.3.0
+
 ## License
 
 This project is licensed under the ISC License.
